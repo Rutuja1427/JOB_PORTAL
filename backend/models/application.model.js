@@ -12,9 +12,9 @@ const applicationSchema = new mongoose.Schema({
         required:true
     },
     status:{
-        type:pending,
+        type:String,
         enum:['pending','accepted','rejected'],
         default:'pending'
     }
-}{timestamps:true});
+},{timestamps:true});
 export const Application = mongoose.model("Application",applicationSchema);
