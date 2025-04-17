@@ -127,7 +127,6 @@ export const updateProfile = async (req, res) => {
         }
         const userId = req.id; // middleware authentication
         let user = await User.findById(userId);
-
         if (!user) {
             return res.status(400).json({
                 message: "User not found.",
@@ -159,11 +158,6 @@ export const updateProfile = async (req, res) => {
             profile: user.profile
         }
 
-        return res.status(200).json({
-            message:"Profile updated successfully.",
-            user,
-            success:true
-        })
     } catch (error) {
         console.log(error);
     }
