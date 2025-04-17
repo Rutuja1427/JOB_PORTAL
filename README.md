@@ -17,37 +17,24 @@ Auth: JWT
 
 File Upload: Multer
 
-🎯 Features
-User:
 
-Register/Login
 
-Filter jobs by category (MERN, MEAN, PHP, Frontend, Backend, Python)
 
-Apply for jobs
 
-Admin:
-
-Post/manage jobs
-
-View applications
-
-⚙️ Setup
-bash
-Copy
-Edit
-git clone <repository-link>
-cd job-portal
 
 # Backend
 cd backend
+
 npm install
+
 npm run dev
 
 # Frontend
 cd ../frontend
+
 npm install
+
 npm start
-Create .env in /backend:
+
 
 
